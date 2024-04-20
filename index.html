@@ -1,31 +1,15 @@
 <!DOCTYPE html>
-<html lang="en" >
-<head>
-  <meta charset="UTF-8">
-  <title>CodePen - Red Eye 1.0</title>
-  <link rel="stylesheet" href="./style.css">
-
-</head>
-<body>
-<!-- partial:index.partial.html -->
-<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AI Eyeball Tracker</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <video id="webcam" autoplay playsinline width="640" height="480"></video>
-    <canvas id="canvas" width="640" height="480"></canvas>
+    <video id="webcam" autoplay playsinline width="640" height="480" style="display:none;"></video>
+    <canvas id="canvas" width="640" height="480" style="position: fixed; top: 0; left: 0; width: 100vw; height: 100vh;"></canvas>
     <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"></script>
     <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/blazeface"></script>
     <script src="app.js"></script>
-</body>
-</html>
-<!-- partial -->
-  <script  src="./script.js"></script>
-
 </body>
 </html>
